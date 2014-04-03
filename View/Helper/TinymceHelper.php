@@ -120,7 +120,8 @@ class TinymceHelper extends AppHelper {
 
 			// $this->Html->script('/tinymce/js/tiny_mce', array('inline' => false));
 			$this->Html->script('/tinymce/js/jquery.tinymce', array('inline' => false));
-			$this->Html->script('/js/elf/js/imglib_tiny_manager', array('inline' => false));
+			// sitex
+			// $this->Html->script('/js/elf/js/imglib_tiny_manager', array('inline' => false));
 
 			$settings = $this->getSettings();
 
@@ -130,7 +131,7 @@ class TinymceHelper extends AppHelper {
 				$this->Html->scriptBlock(
 					'$(document).ready(function(){
 						$("' . $elements . '").tinymce(' . $this->Js->object($setting) . ');
-						imgLibManager.init({url: "/admin/users/users/elf", title: "elFinder", width: 800, height: 430});
+						// imgLibManager.init({url: "/admin/users/users/elf", title: "elFinder", width: 800, height: 430});
 					})', array('inline' => false)
 				);
 			}
